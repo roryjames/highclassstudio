@@ -271,6 +271,17 @@ footer .copyright{
 }
 
 @media(max-width:800px){
+    #about{
+        padding-top:12px !important;
+    }
+    #about .summary {
+        background-color:black !important;
+    }
+    #about .summary div{
+        background-color:#616161;
+        padding:10px;
+        margin:2px 0 !important;
+    }
     a.social i, .contact .address a i, .contact .phone a i, .contact .email a i{
         font-size:12vw;
     }
