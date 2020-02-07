@@ -232,15 +232,34 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 
 /* CUSTOM STYLES */
-footer .social-icons{
+.contact{
+    display:flex;
+    justify-content: space-evenly;
+    text-align:center;
+}
+.contact div, .social-icons a{
+    width:33%;
+    text-align:center;
+    padding: 10px 0;
+}
+.contact a{
+    text-decoration: none;
+}
+.contact .address a i{
+    justify-content: space-evenly;
+}
+.contact .address a i, .contact .phone a i, .contact .email a i{
+    font-size:5vw;
+}
+.social-icons{
     display:flex;
     justify-content: space-evenly;
 }
-footer a{
+.social-icons a{
     text-decoration: none;
     justify-content: space-evenly;
 }
-footer a.social i{
+a.social i{
     font-size:6vw;
 }
 footer .copyright{
@@ -248,7 +267,14 @@ footer .copyright{
 }
 
 @media(max-width:800px){
-    footer a.social i{
+    a.social i, .contact .address a i, .contact .phone a i, .contact .email a i{
         font-size:12vw;
+    }
+
+    .contact .address a p, .contact .phone a p, .contact .email a p{
+        display:none;
+    }
+    .contact div, .social-icons a{
+        padding:30px 0;
     }
 }
